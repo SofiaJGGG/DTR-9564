@@ -1,0 +1,256 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+	</style>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<style>
+		body {
+			margin: 0 !important;
+			margin-top: -11;
+			margin-top: 0;
+			padding: 0;
+			overflow: hidden;
+			line-height: 12px;
+
+		}
+
+		#scrollContainer {
+			overflow-x: hidden;
+			overflow: auto;
+			margin: auto;
+			max-width: 450px;
+			width: 100%;
+			height: 100%;
+			/* FIREFOX SCROLLBAR SETTINGS */
+			scrollbar-color: rgba(0, 0, 0, 1);
+  			scrollbar-width: thin;
+		}
+
+		#content {
+			padding: 0px 10px;
+		}
+
+		/* SCROLLING SETTINGS */
+		.scrollDiv {
+			scroll-behavior: smooth;
+		}
+
+		::-webkit-scrollbar {
+			-webkit-appearance: none;
+			width: 11px;
+			padding: 0;
+		}
+
+		::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			background-color: #c01f73;
+			box-shadow: 0 0 1px rgba(0, 255, 255, .5);
+		}
+
+		/* CUSTOM FONT */
+
+		/* TEXT STYLES */
+
+		p {
+			font-family: 'Roboto', sans-serif;
+			color: #000000;
+			font-size: 10px;
+			margin: 16px 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: c01f73;
+		}
+
+		ul {
+			margin: 0 0 0 -25;
+		}
+
+		li {
+		font-family: 'Roboto', sans-serif;
+			color: #000000;
+			font-size: 10px;
+		}
+
+		/* CONTAINER STYLES */
+		.container {
+			background-color: #F0F4F4;
+			padding: 8px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="scrollContainer">
+		<div id="content">
+
+
+			<!-- ADD YOUR CONTENT HERE -->
+			<p><strong>WHAT IS SUNOSI?</strong></p>
+			<p>SUNOSI &reg; (solriamfetol) is a prescription medicine used to improve wakefulness in adults with excessive daytime sleepiness due to narcolepsy or obstructive sleep apnea (OSA).</p>
+			<ul>
+				<li>	SUNOSI does not treat the underlying cause of obstructive sleep apnea and does not take the place of any device prescribed for obstructive sleep apnea, such as a continuous positive airway pressure (CPAP) machine. It is important that you continue to use these treatments as prescribed by your healthcare provider.</li>
+			</ul>
+			<p>IMPORTANT SAFETY INFORMATION</p>
+			<p><strong>Do not take SUNOSI</strong> if you are taking, or have stopped taking within the past 14 days, a medicine used to treat depression called a monoamine oxidase inhibitor (MAOI).
+				Before taking SUNOSI, tell your doctor about all of your medical conditions, including if you:</p>
+				<ul>
+					<li>have heart problems, high blood pressure, kidney problems, diabetes, or high cholesterol.</li>
+					<li>have had a heart attack or a stroke.</li>
+					<li>have a history of mental health problems (including psychosis and bipolar disorders), or of drug or alcohol abuse or addiction.</li>
+					<li>are pregnant or planning to become pregnant. It is not known if SUNOSI will harm your unborn baby.</li>
+					<li>are breastfeeding or plan to breastfeed. It is not known if SUNOSI passes into your breast milk. Talk to your doctor about the best way to feed your baby if you take SUNOSI.</li>
+				</ul>
+			<p>What are the possible side effects of SUNOSI?</p>
+			<p>SUNOSI may cause serious side effects, including:</p>
+			<p><strong>Increased blood pressure and heart rate.</strong>SUNOSI can cause blood pressure and heart rate increases that can increase the risk of heart attack, stroke, heart failure, and death. Your doctor should check your blood pressure before, and during, treatment with SUNOSI. Your doctor may decrease your dose or tell you to stop taking SUNOSI if you develop high blood pressure that does not go away during treatment with SUNOSI.</p>
+			<p><strong>Mental (psychiatric) symptoms including anxiety, problems sleeping (insomnia), irritability, and agitation.</strong>Tell your doctor if you develop any of these symptoms. Your doctor may change your dose or tell you to stop taking SUNOSI if you develop side effects during treatment with SUNOSI.</p>
+			<p>The most common side effects of SUNOSI include:</p>	
+			<ul>
+				<li>headache</li>
+				<li>nausea</li>
+				<li>decreased appetite</li>
+				<li>anxiety</li>
+				<li>problems sleeping</li>
+			</ul>
+			<p>These are not all the possible side effects of SUNOSI. Call your doctor for advice about side effects.</p>
+			<p><strong>SUNOSI is available in 75 mg and 150 mg tablets and is a federally controlled substance (CIV) because it contains solriamfetol that can be a target for people who abuse prescription medicines or street drugs.</strong>Keep SUNOSI in a safe place to protect it from theft. Never give or sell your SUNOSI to anyone else because it may cause death or harm them and it is against the law. Tell your doctor if you have ever abused or been dependent on alcohol, prescription medicines, or street drugs.</p>
+			<p>You are encouraged to report negative side effects of prescription drugs to the FDA. Visit <strong><a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program">www.fda.gov/medwatch</a></strong> or call <strong>1-800-FDA-1088.</strong> </p>
+			<p>Please see full <a href="">Prescribing Information</a> and <a href="">Medication Guide.</a></p>
+			<!-- END CONTENT -->
+
+
+		</div>
+	</div>
+
+
+<script>
+	//AUTOSCROLL JS
+
+	//CHANGEABLE VARIABLES
+	var autoScroll = true, //TURNS OFF AND ON AUTOSCROLL
+		interactionStopsScroll = false, //IF TRUE, WILL FORCE QUIT AUTOSCROLL ON ANY USER INTERACTION
+		rate = 75, //SPEED OF SCROLL; HIGHER = SLOWER
+		delay = 1500; //DELAY OF STARTING AUTOSCROLL IN MS
+	//////////////////////
+
+
+	var scrollCont = document.getElementById('scrollContainer'),
+		currentScrollPosition,
+		scrollIntervals = null,
+		pauseTimeout,
+		e;
+
+	document.addEventListener('mousemove', function () { e = event; });
+	document.onload = setTimeout(function () { init(); }, delay);
+
+	function init() {
+		if (!autoScroll) return;
+		console.log('init');
+
+		currentScrollPosition = scrollCont.scrollTop;
+
+		if (!interactionStopsScroll) {
+			scrollCont.addEventListener('mouseenter', pauseScroll);
+			scrollCont.addEventListener('mouseleave', startScroll);
+			scrollCont.addEventListener('touchmove', stopMobileScroll);
+		} else {
+			scrollCont.addEventListener('mouseenter', stopScroll);
+			scrollCont.addEventListener('touchmove', stopScroll);
+		}
+
+		var top = getProp(scrollCont, 'offsetTop'),
+			left = getProp(scrollCont, 'offsetLeft'),
+			bottom = scrollCont.offsetHeight + top,
+			right = scrollCont.offsetWidth + left;
+
+		if (!scrollCont.matches(':hover')) {
+			startScroll();
+		}
+
+		if (e) {
+			if ((e.pageY > top && e.pageY < bottom && e.pageX > left && e.pageX < right)) {
+				console.log('nope');
+			} else {
+				startScroll();
+			}
+		}
+	}
+
+	function getProp(el, prop, value) {
+		if (value === undefined) value = 0;
+		if (el.parentNode) return getProp(el.parentNode, prop, value + el[prop]);
+		else return value;
+	}
+
+	function startScroll() {
+		console.log('startScroll');
+		pauseTimeout = setTimeout(function () {
+			currentScrollPosition = scrollCont.scrollTop;
+			if (!scrollIntervals) {
+				scrollIntervals = setInterval(function () {
+					scrollIt();
+				}, rate);
+			}
+		}, 250);
+	}
+
+	function pauseScroll() {
+		console.log('pauseScroll');
+		clearTimeout(pauseTimeout);
+		clearInterval(scrollIntervals);
+		scrollIntervals = null;
+	}
+
+	function stopMobileScroll() {
+		console.log('stopMobileScroll');
+		clearTimeout(pauseTimeout);
+		clearInterval(scrollIntervals);
+		scrollIntervals = null;
+		pauseTimeout = setTimeout(function () {
+			currentScrollPosition = scrollCont.scrollTop;
+			if (!scrollIntervals) {
+				scrollIntervals = setInterval(function () {
+					scrollIt();
+				}, rate);
+			}
+		}, 3000);
+	}
+
+	function scrollIt() {
+		console.log('scrollIt', scrollCont.scrollTop, scrollCont.scrollHeight - scrollCont.offsetHeight);
+		if (scrollCont.scrollTop < (scrollCont.scrollHeight - scrollCont.offsetHeight)) {
+			currentScrollPosition++;
+			scrollCont.scrollTop = currentScrollPosition;
+		} else {
+			stopScroll();
+		}
+	}
+
+	function stopScroll() {
+		console.log("stopScroll");
+		if (!interactionStopsScroll) {
+			scrollCont.removeEventListener("mouseenter", pauseScroll);
+			scrollCont.removeEventListener("mouseleave", startScroll);
+			scrollCont.removeEventListener("touchmove", stopMobileScroll);
+		} else {
+			scrollCont.removeEventListener("mouseenter", stopScroll);
+			scrollCont.removeEventListener("touchmove", stopScroll);
+		}
+		clearInterval(scrollIntervals);
+	}
+
+</script>
+
+
+</body></html>
